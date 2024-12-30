@@ -18,8 +18,8 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.7
         with:
-          host: 78.47.239.56
-          username: alex
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/alex/sources/alexcoll.in
