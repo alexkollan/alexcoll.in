@@ -22,7 +22,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          debug: true
           script: |
             cd /home/alex/sources/alexcoll.in
             git pull origin main
